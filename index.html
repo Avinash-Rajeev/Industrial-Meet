@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <title>Industrial Meet 2025 | Sathyabama IST</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <h1>Industrial Meet 2025</h1>
+      <p>Sathyabama Institute of Science and Technology</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#register">Register</a>
+        <button id="theme-toggle" class="btn theme-toggle" title="Toggle Dark Mode" style="margin-left: 20px;">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn">Join Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero container">
+    <div class="hero-text">
+      <h2>Bridging Campus & Industry</h2>
+      <p>
+        A three-day event focused on innovation, recruitment, and hands-on
+        workshops connecting students and industry leaders.
+      </p>
+      <button onclick="window.open('https://docs.google.com/forms/d/1NVGFfei5NFiN1tlEgiN2p4yVn_DPiS0o8THudxrwwVI/viewform', '_blank')" class="btn primary">
+        <i class="fas fa-user-plus"></i> Register Now
+      </button>
+      <button onclick="scrollToSection('speakers')" class="btn secondary">
+        <i class="fas fa-microphone"></i> View Speakers
+      </button>
+    </div>
+    <div class="hero-img">
+  <img src="https://media.istockphoto.com/id/2148703154/photo/business-persons-on-meeting-in-the-office.jpg?s=612x612&w=0&k=20&c=HyUlXCRGa16mwjrjPMVKBE2lNquxwdzjs6TcGnu2jkM=" alt="Industrial Meet 2025">
+    </div>
+  </section>
+
+  <section id="about" class="container section">
+    <h3><i class="fas fa-info-circle"></i> About the Event</h3>
+    <p>
+     <b> Industrial Meet 2025 </b> a flagship industry–academia interaction program hosted by Sathyabama Institute of Science and Technology. This event brings together professionals from leading companies, innovators, researchers, and students on a common platform to exchange ideas, discuss emerging technologies, and explore collaboration opportunities.
+
+The meet aims to expose students to real-world industrial practices, upcoming tech trends, and career pathways, while also enabling industries to engage with young talent and showcase their advancements. Industrial Meet 2025 represents Sathyabama's continued commitment to nurturing industry-ready graduates and fostering meaningful partnerships that drive innovation and growth.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h4><i class="fas fa-bullhorn"></i> Keynote Talks</h4>
+        <p>Insights from industry leaders on emerging technologies.</p>
+      </div>
+      <div class="card">
+        <h4><i class="fas fa-tools"></i> Workshops</h4>
+        <p>Hands-on sessions to build practical skills.</p>
+      </div>
+      <div class="card">
+        <h4><i class="fas fa-users"></i> Networking</h4>
+        <p>Connect with professionals and peers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="container section">
+    <h3><i class="fas fa-calendar-alt"></i> Event Schedule</h3>
+    <ul class="timeline">
+      <li><strong>9:00 AM - 10:00 AM:</strong> Registration & Welcome</li>
+      <li><strong>10:00 AM - 11:00 AM:</strong> Keynote Speech</li>
+      <li><strong>11:00 AM - 12:00 PM:</strong> Workshop Session 1</li>
+      <li><strong>12:00 PM - 1:00 PM:</strong> Lunch Break</li>
+      <li><strong>1:00 PM - 2:00 PM:</strong> Panel Discussion</li>
+      <li><strong>2:00 PM - 3:00 PM:</strong> Workshop Session 2</li>
+      <li><strong>3:00 PM - 4:00 PM:</strong> Networking & Q&A</li>
+    </ul>
+  </section>
+
+  <section id="speakers" class="container section">
+    <h3><i class="fas fa-microphone"></i> Featured Speakers</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face&auto=format&q=80" alt="Dr. Jane Doe">
+        <h4>Dr. Jane Doe</h4>
+        <p>Chief Technology Officer at TechCorp</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face&auto=format&q=80" alt="Mr. John Smith">
+        <h4>Mr. John Smith</h4>
+        <p>COO at TechCorp</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format&q=80" alt="Mr. David Johnson">
+        <h4>Mr. David Johnson</h4>
+        <p>Founder of Startup XYZ</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face&auto=format&q=80" alt="Mr. Rahul Verma">
+        <h4>Mr. Rahul Verma</h4>
+        <p>Head of AI in the research department</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="register" class="container section">
+    <h3><i class="fas fa-user-plus"></i> Register Now</h3>
+    <p>Registration fee : Rs. 200 Fill out the form below to register.</p>
+    <form id="registerForm" class="form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="College/Organization" required>
+      <button type="submit" class="btn primary"><i class="fas fa-paper-plane"></i> Register</button>
+    </form>
+    <p id="successMsg" class="success-msg"></p>
+  </section>
+
+  <section id="contact" class="container section">
+    <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+    <p>For inquiries, email us at <a href="mailto:sathyabama.ac.in">sathyabama.ac.in</a></p>
+    <p>📍 Sathyabama Institute of Science and Technology, Chennai</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Sathyabama Institute of Science and Technology. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
